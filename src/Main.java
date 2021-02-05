@@ -11,7 +11,7 @@ public class Main {
 
         System.out.printf("i is now: %d\n", i);
 
-        for (int j = i; j > 5; j--) {
+        for (int j = i; j > 7; j--) {
             i = subtract(i);
         }
 
@@ -23,6 +23,7 @@ public class Main {
     }
 
     public static int subtract(int i) {
-        return --i;
+        i = i - 2;
+        return i;
     }
 }
