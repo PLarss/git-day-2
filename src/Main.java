@@ -9,10 +9,20 @@ public class Main {
             i = add(i);
         }
 
-        System.out.printf("i is now: %d", i);
+        System.out.printf("i is now: %d\n", i);
+
+        for (int j = i; j > 5; j--) {
+            i = subtract(i);
+        }
+
+        System.out.printf("i is now: %d\n", i);
     }
 
     public static int add(int i){
         return ++i;
+    }
+
+    public static int subtract(int i) {
+        return --i;
     }
 }
